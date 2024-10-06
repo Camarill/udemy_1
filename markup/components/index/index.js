@@ -22,3 +22,10 @@ const personalMovieDB = {
     genres : [],
     privat : true,
 }
+
+for( let i = 0; i <= 1; i++ ) {
+    let lastFilm = prompt('Один из последних просмотренных фильмов?', '');
+    let lastFilmRating = +prompt('На сколько оцените его?', '');
+
+    personalMovieDB.movies[lastFilm] = lastFilmRating;
+}
